@@ -539,7 +539,7 @@ body {
  * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
-/* line 43, common/_subnormal.scss */
+/* line 32, common/_subnormal.scss */
 article,
 aside,
 details,
@@ -559,7 +559,7 @@ summary {
  * 1. Correct `inline-block` display not defined in IE 8/9.
  * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
  */
-/* line 55, common/_subnormal.scss */
+/* line 52, common/_subnormal.scss */
 audio,
 canvas,
 progress,
@@ -584,7 +584,7 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9/10.
  * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
  */
-/* line 76, common/_subnormal.scss */
+/* line 75, common/_subnormal.scss */
 [hidden],
 template {
   display: none;
@@ -603,7 +603,7 @@ a {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 96, common/_subnormal.scss */
+/* line 95, common/_subnormal.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -622,7 +622,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
  */
-/* line 116, common/_subnormal.scss */
+/* line 115, common/_subnormal.scss */
 b,
 strong {
   font-weight: bold;
@@ -666,7 +666,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 160, common/_subnormal.scss */
+/* line 159, common/_subnormal.scss */
 sub,
 sup {
   font-size: 75%;
@@ -734,7 +734,7 @@ pre {
 /**
  * Address odd `em`-unit font size rendering in all browsers.
  */
-/* line 230, common/_subnormal.scss */
+/* line 227, common/_subnormal.scss */
 code,
 kbd,
 pre,
@@ -755,7 +755,7 @@ samp {
  * 2. Correct font properties not being inherited.
  * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
  */
-/* line 254, common/_subnormal.scss */
+/* line 250, common/_subnormal.scss */
 button,
 input,
 optgroup,
@@ -783,7 +783,7 @@ button {
  * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
  * Correct `select` style inheritance in Firefox.
  */
-/* line 276, common/_subnormal.scss */
+/* line 275, common/_subnormal.scss */
 button,
 select {
   text-transform: none;
@@ -796,7 +796,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 291, common/_subnormal.scss */
+/* line 288, common/_subnormal.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -810,7 +810,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 301, common/_subnormal.scss */
+/* line 300, common/_subnormal.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -819,7 +819,7 @@ html input[disabled] {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 310, common/_subnormal.scss */
+/* line 309, common/_subnormal.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -842,7 +842,7 @@ input {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 333, common/_subnormal.scss */
+/* line 332, common/_subnormal.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -856,7 +856,7 @@ input[type="radio"] {
  * `font-size` values of the `input`, it causes the cursor style of the
  * decrement button to change from `default` to `text`.
  */
-/* line 345, common/_subnormal.scss */
+/* line 344, common/_subnormal.scss */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -882,7 +882,7 @@ input[type="search"] {
  * Safari (but not Chrome) clips the cancel button when the search input has
  * padding (and `textfield` appearance).
  */
-/* line 369, common/_subnormal.scss */
+/* line 368, common/_subnormal.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -938,7 +938,7 @@ table {
   border-spacing: 0;
 }
 
-/* line 423, common/_subnormal.scss */
+/* line 422, common/_subnormal.scss */
 td,
 th {
   padding: 0;
@@ -946,12 +946,12 @@ th {
 
 /* The following are dependencies of csswizardry grid */
 /* Force clearfix on grids */
-/* line 17, common/_grid.scss */
+/* line 16, common/_grid.scss */
 .grid, .grid--rev, .grid--full, .grid--right, .grid--center,
 .grid-uniform {
   *zoom: 1;
 }
-/* line 28, libs/bourbon/addons/_clearfix.scss */
+/* line 27, libs/bourbon/addons/_clearfix.scss */
 .grid:before, .grid--rev:before, .grid--full:before, .grid--right:before, .grid--center:before, .grid:after, .grid--rev:after, .grid--full:after, .grid--right:after, .grid--center:after,
 .grid-uniform:before,
 .grid-uniform:after {
@@ -982,7 +982,7 @@ th {
  * 2. Remove any margins and paddings that might affect the grid system.
  * 3. Apply a negative `margin-left` to negate the columns' gutters.
  */
-/* line 74, common/_grid.scss */
+/* line 73, common/_grid.scss */
 .grid, .grid--rev, .grid--full, .grid--right, .grid--center,
 .grid-uniform {
   list-style: none;
@@ -1397,7 +1397,7 @@ th {
     float: right !important;
   }
 
-  /* line 233, common/_grid.scss */
+  /* line 219, common/_grid.scss */
   .grid-uniform .small--one-half:nth-child(2n+1), .grid-uniform .small--two-quarters:nth-child(2n+1), .grid-uniform .small--three-sixths:nth-child(2n+1), .grid-uniform .small--four-eighths:nth-child(2n+1), .grid-uniform .small--five-tenths:nth-child(2n+1), .grid-uniform .small--six-twelfths:nth-child(2n+1),
   .grid-uniform .small--one-third:nth-child(3n+1),
   .grid-uniform .small--two-sixths:nth-child(3n+1),
@@ -1587,7 +1587,7 @@ th {
     float: right !important;
   }
 
-  /* line 233, common/_grid.scss */
+  /* line 219, common/_grid.scss */
   .grid-uniform .medium--one-half:nth-child(2n+1), .grid-uniform .medium--two-quarters:nth-child(2n+1), .grid-uniform .medium--three-sixths:nth-child(2n+1), .grid-uniform .medium--four-eighths:nth-child(2n+1), .grid-uniform .medium--five-tenths:nth-child(2n+1), .grid-uniform .medium--six-twelfths:nth-child(2n+1),
   .grid-uniform .medium--one-third:nth-child(3n+1),
   .grid-uniform .medium--two-sixths:nth-child(3n+1),
@@ -1777,7 +1777,7 @@ th {
     float: right !important;
   }
 
-  /* line 233, common/_grid.scss */
+  /* line 219, common/_grid.scss */
   .grid-uniform .large--one-half:nth-child(2n+1), .grid-uniform .large--two-quarters:nth-child(2n+1), .grid-uniform .large--three-sixths:nth-child(2n+1), .grid-uniform .large--four-eighths:nth-child(2n+1), .grid-uniform .large--five-tenths:nth-child(2n+1), .grid-uniform .large--six-twelfths:nth-child(2n+1),
   .grid-uniform .large--one-third:nth-child(3n+1),
   .grid-uniform .large--two-sixths:nth-child(3n+1),
@@ -1967,7 +1967,7 @@ th {
     float: right !important;
   }
 
-  /* line 233, common/_grid.scss */
+  /* line 219, common/_grid.scss */
   .grid-uniform .xlarge--one-half:nth-child(2n+1), .grid-uniform .xlarge--two-quarters:nth-child(2n+1), .grid-uniform .xlarge--three-sixths:nth-child(2n+1), .grid-uniform .xlarge--four-eighths:nth-child(2n+1), .grid-uniform .xlarge--five-tenths:nth-child(2n+1), .grid-uniform .xlarge--six-twelfths:nth-child(2n+1),
   .grid-uniform .xlarge--one-third:nth-child(3n+1),
   .grid-uniform .xlarge--two-sixths:nth-child(3n+1),
@@ -2574,10 +2574,10 @@ th {
 html, body {
   margin: 0;
   font-size: 14px;
-  background: #1773c8;
+  background: #18F;
 }
 
-/* line 8, common/_subtypography.scss */
+/* line 4, common/_subtypography.scss */
 body,
 input,
 textarea,
@@ -2592,7 +2592,7 @@ select {
   -webkit-text-size-adjust: 100%;
 }
 
-/* line 19, common/_subtypography.scss */
+/* line 18, common/_subtypography.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   color: white;
@@ -2606,7 +2606,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
   text-decoration: none;
 }
 
-/* line 30, common/_subtypography.scss */
+/* line 29, common/_subtypography.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 .h1 a, .h2 a, .h3 a, .h4 a, .h5 a, .h6 a {
   font-weight: inherit;
@@ -2675,7 +2675,7 @@ small {
   font-weight: 600;
   margin: 0 0 15px;
 }
-/* line 82, common/_subtypography.scss */
+/* line 80, common/_subtypography.scss */
 .documentation h4, .documentation .h4,
 .documentation h5, .documentation .h5,
 .documentation h6, .documentation .h6 {
@@ -2689,13 +2689,13 @@ small {
   margin: 0 0 15px;
 }
 
-/* line 98, common/_subtypography.scss */
+/* line 97, common/_subtypography.scss */
 ol,
 ul {
   margin: 0 0 20px 0;
 }
 
-/* line 102, common/_subtypography.scss */
+/* line 101, common/_subtypography.scss */
 ol li,
 ul li {
   margin-bottom: 9px;
@@ -2745,9 +2745,9 @@ footer a {
   -ms-transform: translateZ(0);
   -o-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1px transparent;
 }
-/* line 155, common/_submixins.scss */
+/* line 153, common/_submixins.scss */
 .float:hover, .float:focus, .float:active {
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
@@ -2834,7 +2834,6 @@ footer a {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url(/images/hero-lines.png);
   background-position: center top;
   background-repeat: repeat-x;
   top: 0;
@@ -2955,7 +2954,6 @@ footer a {
 
 /* line 153, pages/_sub.scss */
 .lt-ie9 .logo--ie {
-  background: transparent url(/images/shopify-blankproject.png) no-repeat;
   height: 27px;
   width: 30px;
   float: left;
