@@ -55,7 +55,7 @@ jQuery(function($){
 
         if (this.$preventApiCalls) return false;
 
-        var uri = 'https://api.github.com/orgs/Shopify/members?callback=?'
+        var uri = 'https://api.github.com/orgs/18F/members?callback=?'
                 + '&per_page='+perPage
                 + '&page='+page;
 
@@ -83,7 +83,7 @@ jQuery(function($){
         for (var i = customRepos.length - 1; i >= 0; i--) {
           repo = customRepos[i];
 
-          var uri = 'https://api.github.com/repos/'+ repo +'?callback=?';
+          var uri = 'https://api.github.com/orgs/18F/repos/'+ repo +'?callback=?';
 
           $.getJSON(uri, function(result) {
             if (result.meta.status == 403) {
