@@ -2834,6 +2834,7 @@ footer a {
   left: 0;
   right: 0;
   bottom: 0;
+  background-image: url(/images/hero-lines.png);
   background-position: center top;
   background-repeat: repeat-x;
   top: 0;
@@ -2954,6 +2955,7 @@ footer a {
 
 /* line 153, pages/_sub.scss */
 .lt-ie9 .logo--ie {
+  background: transparent url(/images/shopify-blankproject.png) no-repeat;
   height: 27px;
   width: 30px;
   float: left;
