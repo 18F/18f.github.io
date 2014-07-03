@@ -1,11 +1,11 @@
-Shopify Open Source
+18F GitHub Page
 =====================
 
-Shopify's Open Source page is build with [Jekyll](http://jekyllrb.com/) and [Sass](http://sass-lang.com/) and hosted on [GitHub Pages](http://pages.github.com/).
+18F's GitHub page is build with [Jekyll](http://jekyllrb.com/) and [Sass](http://sass-lang.com/) and hosted on [GitHub Pages](http://pages.github.com/).
 
 If you want to run it locally
 --
-1. Clone this branch or [download the zip](https://codeload.github.com/Shopify/shopify.github.com/zip/master) and navigate to the folder in terminal
+1. Clone this branch or [download the zip](https://github.com/18F/18f.github.io/archive/gh-pages.zip) and navigate to the folder in terminal
 2. Install Jekyll: `gem install jekyll`
 3. Install Sass: `gem install sass`
     * Use `sass -v` to make sure it worked
