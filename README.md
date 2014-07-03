@@ -1,6 +1,6 @@
 18F GitHub Page
 =====================
-
+   
 18F's GitHub page is build with [Jekyll](http://jekyllrb.com/) and [Sass](http://sass-lang.com/) and hosted on [GitHub Pages](http://pages.github.com/).
 
 If you want to run it locally:
