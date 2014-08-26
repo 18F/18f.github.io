@@ -39,9 +39,8 @@ jQuery(function($){
         // Make sure repos is set (originally in index.html)
         repos = repos ? repos : [];
 
-        this.getCustomRepos();
+        this.getRepos();
         this.addMembers();
-        this.tracking();
 
         $('a[href="#"]').on('click',function(e){e.preventDefault()});
 
@@ -76,32 +75,19 @@ jQuery(function($){
         });
       },
 
-      getCustomRepos: function() {
+      getRepos: function(page) {
         var o = this,
-            customApiCalls = 0;
+            page = page || 1,
+            perPage = 100;
 
-        for (var i = customRepos.length - 1; i >= 0; i--) {
-          repo = customRepos[i];
+        var uri = 'https://api.github.com/orgs/18f/repos?callback=?'
+                + '&per_page=' + perPage
+                + '&page=' + page;
 
-          var uri = 'https://api.github.com/orgs/18F/repos/'+ repo +'?callback=?';
-
-          $.getJSON(uri, function(result) {
-            if (result.meta.status == 403) {
-              // If we hit the limit, just pass on the current repos we have
-              o.addRepos(repos);
-              return;
-            }
-
-            // Add api data to repos array
-            repos = repos.concat(result.data);
-
-            customApiCalls++;
-            if (customApiCalls == customRepos.length) {
-              // If the custom repo ajax calls are done, move one
-              o.addRepos(repos);
-            }
-          });
-        };
+        $.getJSON(uri, function (result) {
+          repos = repos.concat(result.data);
+          o.addRepos(repos);
+        });
 
       },
 
@@ -122,21 +108,6 @@ jQuery(function($){
             return;
           }
 
-          // Opt-in repos (name) and custom repos (full_name) only
-          if ( optInRepos.indexOf(repo.name) > -1 || customRepos.indexOf(repo.full_name) > -1) {
-            repoCount = repoCount + 1;
-          } else {
-            return;
-          }
-
-          // Update repo language if manually defined
-          if ( repo.name in customRepoLanguage ) {
-            repo.language = customRepoLanguage[repo.name];
-            repo.languageClass = (customRepoLanguage[repo.name] || '').toLowerCase();
-          } else {
-            repo.languageClass = (repo.language || '').toLowerCase();
-          }
-
           // Make sure homepage URLs start with http. If not, add them
           if (repo.homepage && repo.homepage.substring(0, 4) != "http") {
             repo.homepage = 'http://' + repo.homepage;
@@ -150,7 +121,6 @@ jQuery(function($){
             description: repo.description,
             stars: repo.stargazers_count ? repo.stargazers_count : 0,
             forks: repo.forks_count ? repo.forks_count : 0,
-            avatar: repo.name in customRepoAvatar ? customRepoAvatar[repo.name] : null,
             homepage: repo.homepage
           };
 
@@ -189,19 +159,7 @@ jQuery(function($){
           var filterValue = $(this).attr('data-filter');
           o.$repoContainer.isotope({ filter: filterValue });
         });
-      },
-
-      tracking: function() {
-        $('a[data-track]').on('click', function(e) {
-          var data = $(this).data('track');
-          // switch(data) {
-          //  case 'Demo Empty':
-          //    _gaq.push(['_trackEvent', 'Open Source', 'Click', 'Demo Store Empty']);
-          //    break;
-          // }
-        });
       }
-
     };
     $.extend(app, timber);
 
