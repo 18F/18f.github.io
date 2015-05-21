@@ -1,1 +1,1 @@
-This project used to serve as a basic hub to our GitHub projects, but we are changing it to instead redirect to the [18F Dashboard](https://18f.gsa.gov/dashboard).  
+This project used to serve as a basic hub to our GitHub projects, but we are changing it to instead redirect to the [18F Dashboard](https://18f.gsa.gov/dashboard).   We are retaining the project, though, to ensure that anyone interested in 18F's work that looks for `18.github.io` reaches an useful destination.   
